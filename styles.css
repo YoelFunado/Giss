@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+.love {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff4d6d;
+    text-shadow: 0 0 10px #ff4d6d;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Estilo para los recuerdos */
+.recuerdos {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    animation: pop 0.6s ease-out forwards;
+    transform: scale(0.5);
+}
+
+/* Añadimos el retraso para que las fotos aparezcan una tras otra */
+.foto:nth-child(1) { animation-delay: 0.2s; }
+.foto:nth-child(2) { animation-delay: 0.4s; }
+.foto:nth-child(3) { animation-delay: 0.6s; }
+.foto:nth-child(4) { animation-delay: 0.8s; }
+.foto:nth-child(5) { animation-delay: 1s; }
+.foto:nth-child(6) { animation-delay: 1.2s; }
+.foto:nth-child(7) { animation-delay: 1.4s; }
+.foto:nth-child(8) { animation-delay: 1.6s; }
+.foto:nth-child(9) { animation-delay: 1.8s; }
+.foto:nth-child(10) { animation-delay: 2s; }
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

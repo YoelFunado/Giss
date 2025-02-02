@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti 💖</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+
+        .love {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff4d6d;
+            text-shadow: 0 0 10px #ff4d6d;
+        }
+
+        .san-valentin {
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+
+        .san-valentin button {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .san-valentin button:hover {
+            background-color: #ff1f4e;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilos para las imágenes */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            justify-items: center;
+        }
+
+        .galeria img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Hola mi amor! 💖</p>
+        <p>Gracias por aceptar estar conmigo un año más mi Thany.  
+        Espero que sean muchos más y podamos disfrutar de esta vida juntos, que no importe el camino difícil ni las adversidades.</p>
+
+        <p>Espero ser la mejor versión de mí para ti, y creo que tú quieres lo mismo.  
+        Aunque hemos vivido momentos difíciles y estuvimos a punto de tomar decisiones incorrectas, ambos hemos madurado juntos y hemos podido crecer de igual manera.</p>
+
+        <p>Aunque no soy bueno con las palabras, me gusta dedicarte mis textos cada que puedo.  
+        Es un sentimiento muy lindo el escribirte mientras pienso en tu reacción.  
+        Muchas gracias por compartir estos años de tu vida conmigo, cielo.</p>
+
+        <p>Y aunque no lo quieras aceptar, me enorgullece ver tus avances, tus logros y cómo te levantas una y otra vez.  
+        Sé que te puede parecer cansado, pero yo lo veo en ti: tienes esa chispa, esa motivación de seguir adelante, y por esto te admiro muchísimo.  
+        Eres una gran persona, un excelente novio/novia, pareja, compañero/a de vida... Para todo eres excelente, y eso lo admiro mucho.</p>
+
+        <p>No tengo más que decir, solo que...</p>
+
+        <p class="love">¡TE AMO! ❤️</p>
+
+        <!-- Nueva sección de San Valentín -->
+        <div class="san-valentin">
+            <p>¿Quieres ser mi San Valentín?</p>
+            <button id="siBtn">Sí</button>
+            <button id="noBtn">No</button>
+        </div>
+
+        <!-- Contenedor para las imágenes -->
+        <div id="imagenes" style="display: none;">
+            <h2>Aquí tienes algunos de nuestros recuerdos:</h2>
+            <div class="galeria">
+                <img src="nv1.jpg" alt="Recuerdo 1" class="foto">
+                <img src="nv2.png" alt="Recuerdo 2" class="foto">
+                <img src="nv3.png" alt="Recuerdo 3" class="foto">
+                <img src="nv4.png" alt="Recuerdo 4" class="foto">
+                <img src="nv5.jpg" alt="Recuerdo 5" class="foto">
+                <img src="nv6.jpg" alt="Recuerdo 6" class="foto">
+                <img src="nv7.jpg" alt="Recuerdo 7" class="foto">
+                <img src="nv8.jpg" alt="Recuerdo 8" class="foto">
+                <img src="nv9.jpg" alt="Recuerdo 9" class="foto">
+                <img src="nv10.jpg" alt="Recuerdo 10" class="foto">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para mostrar las imágenes al hacer clic en "Sí"
+        document.getElementById('siBtn').addEventListener('click', function() {
+            document.getElementById('imagenes').style.display = 'block'; // Mostrar las imágenes
+        });
+ // Redirigir a un "Rick Roll" si se hace clic en "No"
+ document.getElementById('noBtn').addEventListener('click', function() {
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Redirige al Rick Roll
+        });
+    </script>
+</body>
+</html>
